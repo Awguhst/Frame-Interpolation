@@ -16,8 +16,7 @@ A simple yet effective U-Net model trained on the Vimeo-90K dataset. It takes tw
 
 ## Live Demo
 Try the CPU-only Gradio app deployed on Hugging Face Spaces:  
-[Live Gradio Demo](https://huggingface.co/spaces/Awguhst/Frame-Interpolation)  
-*(Replace with your actual Space link)*
+[Live Gradio Demo](https://huggingface.co/spaces/Awguhst/Frame-Interpolation) 
 
 Upload any video, interpolate frames, and download the smoother version with original audio preserved.
 
@@ -35,20 +34,7 @@ Upload any video, interpolate frames, and download the smoother version with ori
 - Lightweight U-Net with double convolutions (GELU activation)
 - Input: Concatenated frame1 + frame2 (6 channels)
 - Output: Predicted middle frame (3 channels)
-- Skip connections and transpose convolutions for precise alignment
-
-## Training Details
-- Dataset: Vimeo-90K triplet (subsets used for faster iteration)
-- Optimizer: Adam (lr=1e-4)
-- Scheduler: ReduceLROnPlateau
-- Early stopping + best model checkpointing
-
-## Inference Usage
-The provided script includes:
-- Loading a video
-- Interpolating frames pairwise
-- Doubling FPS while keeping original speed
-- Re-adding original audio via ffmpeg
+- Skip connections and Transpose convolutions
 
 Perfect for creating buttery-smooth slow-motion or frame-rate upsampling effects.
 
