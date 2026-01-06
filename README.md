@@ -1,11 +1,18 @@
 # Video Frame Interpolation with Lightweight U-Net
 
-A simple yet effective U-Net model for video frame interpolation, trained on the Vimeo-90K dataset. It generates high-quality intermediate frames to smoothly upsample video frame rates (e.g., 30 → 60 FPS) while preserving motion continuity and minimizing artifacts.
+## What is Video Frame Interpolation?
 
-**Key Results**
-- Validation PSNR: **28.5 dB**
-- Loss: L1 + 0.2×LPIPS (perceptual)
-- Mixed-precision training with gradient clipping for stable convergence
+Video frame interpolation is a technique that generates new **intermediate frames** between two existing consecutive frames in a video. This creates the illusion of smoother motion and effectively increases the frame rate (e.g., from 30 FPS to 60 FPS) without changing the playback speed.
+
+Why is it useful?
+- Turns choppy low-FPS videos into buttery-smooth high-FPS ones
+- Enables convincing slow-motion from normal-speed footage
+- Improves visual quality for old videos, games, or compressed content
+
+Traditional methods (like simple blending) often produce ghosting or blurry artifacts. Modern deep learning approaches, like this U-Net model, learn complex motion patterns to synthesize realistic in-between frames with sharp details and accurate object movement.
+
+## Project Overview
+A simple yet effective U-Net model trained on the Vimeo-90K dataset. It takes two consecutive frames as input and predicts a high-quality middle frame, enabling smooth video frame rate upsampling while preserving motion continuity and minimizing visual artifacts.
 
 ## Live Demo
 Try the CPU-only Gradio app deployed on Hugging Face Spaces:  
