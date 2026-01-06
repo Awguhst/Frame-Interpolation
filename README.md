@@ -16,7 +16,7 @@ A simple yet effective U-Net model trained on the Vimeo-90K dataset. It takes tw
 
 ## Live Demo
 Try the CPU-only Gradio app deployed on Hugging Face Spaces:  
-[https://huggingface.co/spaces/your-username/video-frame-interpolation-demo](https://huggingface.co/spaces/your-username/video-frame-interpolation-demo)  
+[Live Gradio Demo](https://huggingface.co/spaces/Awguhst/Frame-Interpolation)  
 *(Replace with your actual Space link)*
 
 Upload any video, interpolate frames, and download the smoother version with original audio preserved.
