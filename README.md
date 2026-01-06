@@ -24,23 +24,13 @@ Upload any video, interpolate frames, and download the smoother version with ori
 
 Here's a simple side-by-side comparison of an original low-FPS clip (left) next to the interpolated smoother version (right), demonstrating the dramatic improvement in motion fluidity:
 
-<div style="display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <p><strong>Original (Low FPS)</strong></p>
-    <video controls width="480">
-      <source src="demo/original.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div style="text-align: center;">
-    <p><strong>Interpolated (Smooth)</strong></p>
-    <video controls width="480">
-      <source src="demo/interpolated.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+<div style="display: flex; justify-content: center;">
+  <video controls width="960">
+    <source src="demo/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 
-<p style="text-align: center; margin-top: 20px;">
-  <em>Example demonstrating the "soap opera effect" in slow motion using frame interpolation.</em>
-</p>
+<p style="text-align: center; margin-top: 10px;">
+  <em>(Example from a motion interpolation demo showing the "soap opera effect" in slow motion.)</em>
+</p>>
