@@ -19,10 +19,3 @@ Try the CPU-only Gradio app deployed on Hugging Face Spaces:
 [Live Gradio Demo](https://huggingface.co/spaces/Awguhst/Frame-Interpolation) 
 
 Upload any video, interpolate frames, and download the smoother version with original audio preserved.
-
-## Side-by-Side Video Comparison
-Here's a simple side-by-side comparison of an original low-FPS clip (left) next to the interpolated smoother version (right), demonstrating the dramatic improvement in motion fluidity:
-
-[![Side-by-side frame interpolation comparison]]([https://link-to-your-video.mp4](https://cdn.discordapp.com/attachments/1388119959602991106/1458168989841883340/honey_1.mp4?ex=695ea932&is=695d57b2&hm=65ed80a4ca2bce05db4a5f919f40a962f1542b446817a22e7e23893b74b37d34&))
-
-(Example from a motion interpolation demo showing the "soap opera effect" in slow motion.)
