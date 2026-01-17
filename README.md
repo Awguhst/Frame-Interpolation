@@ -23,9 +23,6 @@ The interpolated video generates a smooth intermediate frame between consecutive
 |----------------------------------|--------------------------|
 | ![Original Video](assets/original.gif) | ![Frame Interpolated Video](assets/interpolated.gif) |
 
-**Left:** Original low-FPS video with visible motion jumps  
-**Right:** Output from the Lightweight U-Net model with synthesized intermediate frames
-
 ## Live Demo
 Try the CPU-only Gradio app deployed on Hugging Face Spaces:  
 [Live Gradio Demo](https://huggingface.co/spaces/Awguhst/Frame-Interpolation) 
