@@ -14,6 +14,18 @@ Traditional methods (like simple blending) often produce ghosting or blurry arti
 ## Project Overview
 This is a simple U-Net model trained on the Vimeo-90K dataset. It takes two consecutive frames as input and predicts a high-quality middle frame, enabling smooth video frame rate upsampling while preserving motion continuity and minimizing visual artifacts.
 
+## Visual Comparison: Original vs. Interpolated
+
+Below is a side-by-side comparison demonstrating the effect of the frame interpolation model.  
+The interpolated video generates a smooth intermediate frame between consecutive frames, resulting in noticeably smoother motion.
+
+| Original Video (No Interpolation) | Frame Interpolated Video |
+|----------------------------------|--------------------------|
+| ![Original Video](assets/original.gif) | ![Frame Interpolated Video](assets/interpolated.gif) |
+
+**Left:** Original low-FPS video with visible motion jumps  
+**Right:** Output from the Lightweight U-Net model with synthesized intermediate frames
+
 ## Live Demo
 Try the CPU-only Gradio app deployed on Hugging Face Spaces:  
 [Live Gradio Demo](https://huggingface.co/spaces/Awguhst/Frame-Interpolation) 
